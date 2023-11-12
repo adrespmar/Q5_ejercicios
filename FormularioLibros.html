@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Libro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: black;
+            text-align: center; /* Centrar el texto */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: orange;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Añadir Libro</h1>
+
+    <form action="crealibro.php" method="post">
+        <label for="id">Id:</label>
+        <input type="text" id="id" name="id" required>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="autor">Autor:</label>
+        <input type="text" id="autor" name="autor" required>
+
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" name="isbn" required>
+
+        <label for="puntuacion">Puntuación:</label>
+        <input type="text" id="puntuacion" name="puntuacion" required>
+
+        <label for="genero">Género:</label>
+        <input type="text" id="genero" name="genero" required>
+
+        <button type="submit">Añadir Libro</button>
+    </form>
+
+</body>
+</html>
+
+
